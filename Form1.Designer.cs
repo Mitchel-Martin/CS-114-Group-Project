@@ -1,6 +1,6 @@
 ﻿namespace CS_114_Group_Project
 {
-    partial class Form1
+    partial class frmHealthWellness
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,12 +28,111 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            lblCreditCardInfo = new Label();
+            textBox1 = new TextBox();
+            button1 = new Button();
+            lblCardNumber = new Label();
+            lblCCV = new Label();
+            lblExpiration = new Label();
+            textBox2 = new TextBox();
+            comboBox1 = new ComboBox();
+            SuspendLayout();
+            // 
+            // lblCreditCardInfo
+            // 
+            lblCreditCardInfo.AutoSize = true;
+            lblCreditCardInfo.Location = new Point(484, 55);
+            lblCreditCardInfo.Name = "lblCreditCardInfo";
+            lblCreditCardInfo.Size = new Size(382, 32);
+            lblCreditCardInfo.TabIndex = 0;
+            lblCreditCardInfo.Text = "Enter Your Credit Card Information";
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(653, 133);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(200, 39);
+            textBox1.TabIndex = 1;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(616, 606);
+            button1.Name = "button1";
+            button1.Size = new Size(150, 46);
+            button1.TabIndex = 2;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // lblCardNumber
+            // 
+            lblCardNumber.AutoSize = true;
+            lblCardNumber.Location = new Point(241, 140);
+            lblCardNumber.Name = "lblCardNumber";
+            lblCardNumber.Size = new Size(339, 32);
+            lblCardNumber.TabIndex = 3;
+            lblCardNumber.Text = "Enter your credit card number:";
+            // 
+            // lblCCV
+            // 
+            lblCCV.AutoSize = true;
+            lblCCV.Location = new Point(241, 239);
+            lblCCV.Name = "lblCCV";
+            lblCCV.Size = new Size(271, 32);
+            lblCCV.TabIndex = 4;
+            lblCCV.Text = "Enter your CCV number:";
+            // 
+            // lblExpiration
+            // 
+            lblExpiration.AutoSize = true;
+            lblExpiration.Location = new Point(241, 339);
+            lblExpiration.Name = "lblExpiration";
+            lblExpiration.Size = new Size(282, 32);
+            lblExpiration.TabIndex = 5;
+            lblExpiration.Text = "Enter the Expiration date:";
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(653, 236);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(200, 39);
+            textBox2.TabIndex = 6;
+            // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new Point(653, 336);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(242, 40);
+            comboBox1.TabIndex = 7;
+            // 
+            // frmHealthWellness
+            // 
+            AutoScaleDimensions = new SizeF(13F, 32F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1362, 919);
+            Controls.Add(comboBox1);
+            Controls.Add(textBox2);
+            Controls.Add(lblExpiration);
+            Controls.Add(lblCCV);
+            Controls.Add(lblCardNumber);
+            Controls.Add(button1);
+            Controls.Add(textBox1);
+            Controls.Add(lblCreditCardInfo);
+            Name = "frmHealthWellness";
+            Text = "Health and Wellness App";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label lblCreditCardInfo;
+        private TextBox textBox1;
+        private Button button1;
+        private Label lblCardNumber;
+        private Label lblCCV;
+        private Label lblExpiration;
+        private TextBox textBox2;
+        private ComboBox comboBox1;
     }
 }
