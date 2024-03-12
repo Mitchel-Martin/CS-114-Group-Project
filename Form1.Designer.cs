@@ -103,27 +103,33 @@
             // 
             // cboMonth
             // 
+            cboMonth.DropDownStyle = ComboBoxStyle.DropDownList;
             cboMonth.FormattingEnabled = true;
             cboMonth.Location = new Point(810, 256);
             cboMonth.Name = "cboMonth";
             cboMonth.Size = new Size(218, 40);
             cboMonth.TabIndex = 7;
+            cboMonth.SelectedIndexChanged += cboMonth_SelectedIndexChanged;
             // 
             // cboDay
             // 
+            cboDay.DropDownStyle = ComboBoxStyle.DropDownList;
             cboDay.FormattingEnabled = true;
             cboDay.Location = new Point(1057, 256);
             cboDay.Name = "cboDay";
             cboDay.Size = new Size(125, 40);
             cboDay.TabIndex = 8;
+            cboDay.SelectedIndexChanged += cboDay_SelectedIndexChanged;
             // 
             // cboYear
             // 
+            cboYear.DropDownStyle = ComboBoxStyle.DropDownList;
             cboYear.FormattingEnabled = true;
             cboYear.Location = new Point(653, 256);
             cboYear.Name = "cboYear";
             cboYear.Size = new Size(129, 40);
             cboYear.TabIndex = 9;
+            cboYear.SelectedIndexChanged += cboYear_SelectedIndexChanged;
             // 
             // lblPersonalInfo
             // 
@@ -256,6 +262,7 @@
             Controls.Add(lblCreditCardInfo);
             Name = "frmHealthWellness";
             Text = "Health and Wellness App";
+            Load += frmHealthWellness_Load;
             ResumeLayout(false);
             PerformLayout();
         }
