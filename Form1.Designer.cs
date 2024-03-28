@@ -230,7 +230,7 @@
             btnGetStarted.Name = "btnGetStarted";
             btnGetStarted.Size = new Size(233, 97);
             btnGetStarted.TabIndex = 22;
-            btnGetStarted.Text = "Get Started";
+            btnGetStarted.Text = "Accept Terms and Get Started";
             btnGetStarted.UseVisualStyleBackColor = true;
             btnGetStarted.Click += btnGetStarted_Click;
             // 
